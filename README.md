@@ -1,3 +1,29 @@
+# Simple React Bootstrap Template with BootsWatch Theme
+
+Purpose is to skip the setup process when using Bootstrap and using one of the premade themes along with React Router. `Pages` is where you put the page files and `Components` is where you put the UI files like Navigation Bar or Cards. 
+
+To Change themes 
+
+`index.js`
+
+```
+import React from "react";
+import ReactDOM from "react-dom";
+import "bootswatch/dist/minty/bootstrap.min.css"; 
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
+```
+Change Minty into any of the names mentioned in bootswatch
+
+[More Themes](https://bootswatch.com/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
