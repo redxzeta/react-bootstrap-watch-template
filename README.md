@@ -1,6 +1,10 @@
 # Simple React Bootstrap Template with BootsWatch Theme
 
-Purpose is to skip the setup process when using Bootstrap and using one of the premade themes along with React Router. `Pages` is where you put the page files and `Components` is where you put the UI files like Navigation Bar or Cards. 
+Purpose is to skip the setup process when using Bootstrap and using one of the premade themes along with React Router. `Pages` is where you put the page files and `Components` is where you put the UI files like Navigation Bar or Cards. Could be Customized to your liking. 
+
+git clone 
+
+`git clone https://github.com/redxzeta/react-bootstrap-watch-template.git`
 
 To Change themes 
 
@@ -20,7 +24,9 @@ ReactDOM.render(
   document.getElementById("root")
 );
 ```
-Change Minty into any of the names mentioned in bootswatch
+Change minty into any of the names mentioned in bootswatch ie `lumen`
+
+`import "bootswatch/dist/lumen/bootstrap.min.css"; `
 
 [More Themes](https://bootswatch.com/)
 
