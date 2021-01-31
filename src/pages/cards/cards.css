@@ -1,0 +1,19 @@
+.card__container{
+    width:100%;
+    height:auto;
+    padding:30px;
+}
+.card__container h1{
+    text-align: center;
+}
+
+.card-style{
+    width:100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.button-row{
+    margin-left: 5px;
+    margin-right:5px
+}

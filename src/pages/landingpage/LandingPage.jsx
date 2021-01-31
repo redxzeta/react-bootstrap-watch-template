@@ -1,9 +1,11 @@
 import { Fragment } from "react";
-
+import "./landing.css";
 const LandingPage = () => {
   return (
     <Fragment>
-      <h2>Landing PAge</h2>
+      <div className="landing">
+        <h1>This is a Landing Page</h1>
+      </div>
     </Fragment>
   );
 };
