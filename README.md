@@ -64,6 +64,10 @@ more info here on [React Router Dom](https://reactrouter.com/web/guides/quick-st
 
 [React Hooks](https://reactjs.org/docs/hooks-intro.html)
 
+[React Router Dom](https://reactrouter.com/web/guides/quick-start)
+
+[es6 js](https://www.javascripttutorial.net/es6/)
+
 
 # Deployment
 
