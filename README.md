@@ -1,6 +1,8 @@
-# Simple React Bootstrap Template with BootsWatch Theme
+# Simple React Bootstrap Template Theme
 
-Purpose is to skip the setup process when using Bootstrap and using one of the premade themes along with React Router. `Pages` is where you put the page files and `Components` is where you put the UI files like Navigation Bar or Cards. Could be Customized to your liking. This could be also for beginners learning React where they want to focus on functionality first then styling later.
+[link](https://minty-template.netlify.app/)
+
+Purpose is to skip the setup process when using Bootstrap and using one of the premade themes along with React Router. `Pages` is where you put the page files and `Components` is where you put the UI files like Navigation Bar or Cards. Folder Structure is optional and could be customized to your liking. This could be also for beginners learning React where they want to focus on functionality first then styling later. Css files could be with their repspective page or create a new folder `Styles`.
 
 git clone
 
@@ -31,9 +33,35 @@ Change minty into any of the names mentioned in bootswatch ie `lumen`
 
 [More Themes](https://bootswatch.com/)
 
+# Adding Pages 
+
+`App.js`
+Add a new route in `<Switch>` like from below and put in the component u want to use for the page
+
+more info here on [React Router Dom](https://reactrouter.com/web/guides/quick-start)
+
+```
+<Switch>
+  <Route path="/cards">
+    <Cards />
+  </Route>
+  <Route path="/test">
+    <Test />
+  </Route>
+  <Route path="/">
+    <LandingPage />
+  </Route>
+</Switch>
+```
+
+
 # Deployment
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/redxzeta/react-bootstrap-watch-template)
+
+Clicking on the button deploys the site on your netlify account and clones it to your github repo
+
+I recommend signing up with [Netlify](https://www.netlify.com/) to deploy your site
 
 # Getting Started with Create React App
 
