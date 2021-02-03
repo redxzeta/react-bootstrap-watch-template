@@ -9,10 +9,8 @@ import Test from "./pages/Test";
 function App() {
   return (
     <Fragment>
-      {" "}
       <Router>
-        {" "}
-        <NavigationBar />{" "}
+        <NavigationBar />
         <Container>
           <Switch>
             <Route path="/cards">
@@ -24,9 +22,9 @@ function App() {
             <Route path="/">
               <LandingPage />
             </Route>
-          </Switch>{" "}
+          </Switch>
         </Container>
-      </Router>{" "}
+      </Router>
     </Fragment>
   );
 }

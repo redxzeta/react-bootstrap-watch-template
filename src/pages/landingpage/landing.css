@@ -1,3 +1,11 @@
 .landing h1{
 text-align: center;
 }
+
+.landing h3 {
+    color:beige;
+}
+
+.landing img {
+    border-radius: 10px;
+}
