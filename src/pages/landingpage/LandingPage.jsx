@@ -3,7 +3,7 @@ import "./landing.css";
 const LandingPage = () => {
   return (
     <div className="landing">
-      <h1>This is a Landing Page</h1>
+      <h1>Landing Page</h1>
       <CarouselLayout />
     </div>
   );
