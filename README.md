@@ -31,6 +31,10 @@ Change minty into any of the names mentioned in bootswatch ie `lumen`
 
 `import "bootswatch/dist/lumen/bootstrap.min.css"; `
 
+Using the regular
+
+`import 'bootstrap/dist/css/bootstrap.min.css';`
+
 [More Themes](https://bootswatch.com/)
 
 # Adding Pages 
