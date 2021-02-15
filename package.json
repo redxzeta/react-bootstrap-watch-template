@@ -1,7 +1,12 @@
 {
-  "name": "cov-react-app",
+  "name": "react-boot-watch-app",
   "version": "0.1.0",
-  "private": true,
+  "keywords": [
+    "react",
+    "bootstrap",
+    "create-react-app",
+    "template"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
