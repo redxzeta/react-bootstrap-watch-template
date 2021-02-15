@@ -1,12 +1,16 @@
 # Simple React Bootstrap Template Theme
 
-[link](https://minty-template.netlify.app/)
-
 Purpose is to skip the setup process when using Bootstrap and using one of the premade themes along with React Router. Sometimes I find myself repeating the same process in hobby projects or hackathons. `Pages` is where you put the page files and `Components` is where you put the UI files like Navigation Bar or Cards. Folder Structure is optional and could be customized to your liking. This could be also for beginners learning React where they want to focus on functionality first then styling later. Css files could be with their repspective page or create a new folder `Styles`.
+
+[sample link](https://minty-template.netlify.app/)
 
 git clone
 
 `git clone https://github.com/redxzeta/react-bootstrap-watch-template.git`
+
+OR
+
+Use Template from above
 
 To Change themes
 
