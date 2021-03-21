@@ -91,6 +91,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+### `npm install --global yarn`
+If you do not have yarn installed. But u could use npm as an alterntaive.
+
+### `yarn install`
+
+Installs node modules required to run the app.
+
+
 In the project directory, you can run:
 
 ### `yarn start`
@@ -100,6 +108,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+
 
 ### `yarn test`
 
