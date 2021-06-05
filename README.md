@@ -41,7 +41,7 @@ Using the regular
 
 [More Themes](https://bootswatch.com/)
 
-# Adding Pages 
+# Adding Pages
 
 `App.js`
 Add a new route in `<Switch>` like from below and put in the component u want to use for the page
@@ -62,7 +62,7 @@ more info here on [React Router Dom](https://reactrouter.com/web/guides/quick-st
 </Switch>
 ```
 
-# Helpful Links 
+# Helpful Links
 
 [React Bootstrap](https://react-bootstrap.github.io/getting-started/introduction)
 
@@ -75,7 +75,6 @@ more info here on [React Router Dom](https://reactrouter.com/web/guides/quick-st
 [React Router Dom](https://reactrouter.com/web/guides/quick-start)
 
 [es6 js](https://www.javascripttutorial.net/es6/)
-
 
 # Deployment
 
@@ -92,12 +91,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 ### `npm install --global yarn`
+
 If you do not have yarn installed. But u could use npm as an alterntaive.
 
 ### `yarn install`
 
 Installs node modules required to run the app.
-
 
 In the project directory, you can run:
 
@@ -108,7 +107,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-
 
 ### `yarn test`
 
