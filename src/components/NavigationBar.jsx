@@ -1,7 +1,9 @@
-import { Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Button, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { supabase } from "../utils/SupaBaseUtils";
 
 const NavigationBar = () => {
+  const logout = () => supabase.auth.signOut;
   return (
     <Navbar bg="primary" expand="lg">
       <Navbar.Brand as={Link} to="/">
@@ -34,6 +36,7 @@ const NavigationBar = () => {
         </Nav>
 
         <Nav className="ml-auto">
+          <Button onClick={() => logout}>Logout</Button>
           <Nav.Link as={Link} to="/cards">
             Cards
           </Nav.Link>

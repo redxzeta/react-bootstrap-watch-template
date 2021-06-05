@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Button, Form, Jumbotron } from "react-bootstrap";
+import { supabase } from "../../utils/SupaBaseUtils";
 import "./register.css";
 const Register = () => {
   const [form, setForm] = useState({ email: "", password: "" });
@@ -13,7 +14,12 @@ const Register = () => {
   };
   const onSubmit = (e) => {
     e.preventDefault();
+    const { error, data } = supabase.auth.signUp({
+      email: "example@email.com",
+      password: "example-password",
+    });
     setResult(form);
+    console.log(data);
   };
   return (
     <div className="register__page">
