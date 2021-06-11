@@ -6,6 +6,7 @@ import Register from "./pages/account/Register";
 import Cards from "./pages/cards/Cards";
 import LandingPage from "./pages/landingpage/LandingPage";
 import Test from "./pages/Test";
+import Todo from "./pages/todo/Todo";
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
             <Route path="/register">
               <Register />
             </Route>
+            <Route path="/todo" component={Todo} />
+
             <Route path="/">
               <LandingPage />
             </Route>
