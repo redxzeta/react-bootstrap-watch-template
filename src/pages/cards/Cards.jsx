@@ -26,18 +26,17 @@ const Cards = () => {
     <div className="card__container">
       <h1>Cards</h1>
       <p>Backgrounds can be changed using primary, secondary, etc</p>
-      <Row>
-        {variantStyle.map((v) => (
-          <Button
-            className="button-row"
-            variant={v}
-            key={v}
-            onClick={() => setVariant(v)}
-          >
-            {v}
-          </Button>
-        ))}
-      </Row>
+
+      {variantStyle.map((v) => (
+        <Button
+          className="button-row"
+          variant={v}
+          key={v}
+          onClick={() => setVariant(v)}
+        >
+          {v}
+        </Button>
+      ))}
 
       <Row>
         {userData.map((user) => (

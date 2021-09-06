@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "bootswatch/dist/minty/bootstrap.min.css";
+import "bootswatch/dist/vapor/bootstrap.min.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
