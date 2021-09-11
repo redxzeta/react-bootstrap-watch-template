@@ -21,8 +21,8 @@ const NavigationBar = () => {
               <NavDropdown.Item as={Link} to="/cards">
                 Cards
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/cards">
-                Another Link
+              <NavDropdown.Item as={Link} to="/modal">
+                Modal
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/cards">
                 Change Link Here
