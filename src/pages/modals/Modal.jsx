@@ -41,7 +41,7 @@ const ModalExample = () => {
       >
         <Image src={modalWine.img} alt={modalWine.title} />
         <br />
-        <small>Passing Children Here</small>
+        <small>Passing the Wine Children Here</small>
       </FunModal>
       {funWines.map((f) => (
         <Button onClick={() => setWineType(f)} key={f}>
