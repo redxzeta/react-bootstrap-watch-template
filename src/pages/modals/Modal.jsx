@@ -32,7 +32,7 @@ const ModalExample = () => {
   };
   const [modalWine, setModalWine] = useState({ title: "wine", img: "" });
   return (
-    <div>
+    <Container>
       <h1>Modal</h1>
       <FunModal
         show={open}
@@ -74,7 +74,7 @@ const ModalExample = () => {
           </tbody>
         </Table>
       </Container>
-    </div>
+    </Container>
   );
 };
 

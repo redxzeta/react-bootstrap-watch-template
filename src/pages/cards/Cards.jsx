@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Card, Col, Row, Button } from "react-bootstrap";
+import { Card, Col, Row, Button, Container } from "react-bootstrap";
 import "./cards.css";
 
 const variantStyle = [
@@ -23,41 +23,43 @@ const Cards = () => {
   const [userData, setUserData] = useState([]);
   const [variant, setVariant] = useState("primary");
   return (
-    <div className="card__container">
-      <h1>Cards</h1>
-      <p>Backgrounds can be changed using primary, secondary, etc</p>
+    <Container>
+      <div className="card__container">
+        <h1>Cards</h1>
+        <p>Backgrounds can be changed using primary, secondary, etc</p>
 
-      {variantStyle.map((v) => (
-        <Button
-          className="button-row"
-          variant={v}
-          key={v}
-          onClick={() => setVariant(v)}
-        >
-          {v}
-        </Button>
-      ))}
-
-      <Row>
-        {userData.map((user) => (
-          <Col md={4} xs={12} key={user.id}>
-            <Card
-              border="primary"
-              bg={variant}
-              text={variant === "light" ? "dark" : "white"}
-              className="card-style"
-            >
-              <Card.Header>{user.name}</Card.Header>
-              <Card.Body>
-                <Card.Title>Details </Card.Title>
-                <Card.Text>UserName: {user.username}</Card.Text>
-                <Card.Text>Email: {user.email} </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
+        {variantStyle.map((v) => (
+          <Button
+            className="button-row"
+            variant={v}
+            key={v}
+            onClick={() => setVariant(v)}
+          >
+            {v}
+          </Button>
         ))}
-      </Row>
-    </div>
+
+        <Row>
+          {userData.map((user) => (
+            <Col md={4} xs={12} key={user.id}>
+              <Card
+                border="primary"
+                bg={variant}
+                text={variant === "light" ? "dark" : "white"}
+                className="card-style"
+              >
+                <Card.Header>{user.name}</Card.Header>
+                <Card.Body>
+                  <Card.Title>Details </Card.Title>
+                  <Card.Text>UserName: {user.username}</Card.Text>
+                  <Card.Text>Email: {user.email} </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </div>
+    </Container>
   );
 };
 export default Cards;

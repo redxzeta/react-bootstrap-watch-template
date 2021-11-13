@@ -44,22 +44,23 @@ Using the regular
 # Adding Pages
 
 `App.js`
-Add a new route in `<Switch>` like from below and put in the component u want to use for the page
+Add a new route in `<Routes>` under the `<NavigationBar/>` like from below and put in the component u want to use for the page
 
-more info here on [React Router Dom](https://reactrouter.com/web/guides/quick-start)
+more info here on [React Router Dom](https://reactrouter.com/docs/en/v6)
 
 ```
-<Switch>
-  <Route path="/cards">
-    <Cards />
-  </Route>
-  <Route path="/test">
-    <Test />
-  </Route>
-  <Route path="/">
-    <LandingPage />
-  </Route>
-</Switch>
+      <Routes>
+        {/* Setting Navigationbar here because it is a layout which can be used from the routes below */}
+        <Route path="/" element={<NavigationBar />}>
+          <Route index element={<LandingPage />} />
+          <Route path="/cards" element={<Cards />} />
+          <Route path="/test" element={<Test />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/modal" element={<ModalExample />} />
+          <Route path="/newpage" element={<YourNewComponent/>} />
+          <Route path="/todo" element={<Todo />} />
+        </Route>
+      </Routes>
 ```
 
 # Helpful Links
@@ -72,7 +73,7 @@ more info here on [React Router Dom](https://reactrouter.com/web/guides/quick-st
 
 [React Hooks](https://reactjs.org/docs/hooks-intro.html)
 
-[React Router Dom](https://reactrouter.com/web/guides/quick-start)
+[React Router Dom](https://reactrouter.com/docs/en/v6)
 
 [es6 js](https://www.javascripttutorial.net/es6/)
 
